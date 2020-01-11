@@ -417,7 +417,8 @@
 						"1": {
 							"patterns": [
 								{
-									"include": "#illegal-name"
+									"match": "\\d\\w+",
+									"name": "invalid.illegal.v"
 								},
 								{
 									"match": "\\w+",
@@ -476,7 +477,8 @@
 						"6": {
 							"patterns": [
 								{
-									"include": "#illegal-name"
+									"match": "\\d\\w+",
+									"name": "invalid.illegal.v"
 								},
 								{
 									"match": "\\w+",
@@ -567,7 +569,8 @@
 						"10": {
 							"patterns": [
 								{
-									"include": "#illegal-name"
+									"match": "\\d\\w+",
+									"name": "invalid.illegal.v"
 								},
 								{
 									"match": "\\w+",
@@ -591,7 +594,8 @@
 						"1": {
 							"patterns": [
 								{
-									"include": "#illegal-name"
+									"match": "\\d\\w+",
+									"name": "invalid.illegal.v"
 								},
 								{
 									"match": "\\w+",
@@ -625,10 +629,8 @@
 						"3": {
 							"patterns": [
 								{
-									"include": "#illegal-name"
-								},
-								{
-									"include": "#types"
+									"name": "invalid.illegal.v",
+									"match": "\\d\\w+"
 								},
 								{
 									"name": "entity.name.type.v",
@@ -639,10 +641,8 @@
 						"4": {
 							"patterns": [
 								{
-									"include": "#illegal-name"
-								},
-								{
-									"include": "#types"
+									"name": "invalid.illegal.v",
+									"match": "\\d\\w+"
 								},
 								{
 									"name": "entity.name.type.v",
@@ -688,7 +688,8 @@
 						"3": {
 							"patterns": [
 								{
-									"include": "#illegal-name"
+									"name": "invalid.illegal.v",
+									"match": "\\d\\w+"
 								},
 								{
 									"name": "entity.name.interface.v",
@@ -1023,10 +1024,6 @@
 					"name": "constant.other.placeholder.v"
 				}
 			]
-		},
-		"illegal-name": {
-			"match": "\\d\\w+",
-			"name": "invalid.illegal.v"
 		}
 	}
 }
